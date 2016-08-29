@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="upType" type="{http://ws.final1/}type" minOccurs="0"/>
+ *         &lt;element name="typ" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -27,34 +27,34 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "updateType", propOrder = {
-    "upType"
+    "typ"
 })
 public class UpdateType {
 
-    protected Type upType;
+    protected String typ;
 
     /**
-     * Gets the value of the upType property.
+     * Gets the value of the typ property.
      * 
      * @return
      *     possible object is
-     *     {@link Type }
+     *     {@link String }
      *     
      */
-    public Type getUpType() {
-        return upType;
+    public String getTyp() {
+        return typ;
     }
 
     /**
-     * Sets the value of the upType property.
+     * Sets the value of the typ property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Type }
+     *     {@link String }
      *     
      */
-    public void setUpType(Type value) {
-        this.upType = value;
+    public void setTyp(String value) {
+        this.typ = value;
     }
 
 }

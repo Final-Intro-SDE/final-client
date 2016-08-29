@@ -19,10 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="birthdate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="firstname" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="lastname" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="pid" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="uname" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="usertype" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,20 +33,14 @@ import javax.xml.bind.annotation.XmlType;
     "birthdate",
     "firstname",
     "lastname",
-    "password",
-    "pid",
-    "uname",
-    "usertype"
+    "pid"
 })
 public class Person {
 
     protected String birthdate;
     protected String firstname;
     protected String lastname;
-    protected String password;
     protected Integer pid;
-    protected String uname;
-    protected String usertype;
 
     /**
      * Gets the value of the birthdate property.
@@ -124,30 +115,6 @@ public class Person {
     }
 
     /**
-     * Gets the value of the password property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPassword() {
-        return password;
-    }
-
-    /**
-     * Sets the value of the password property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPassword(String value) {
-        this.password = value;
-    }
-
-    /**
      * Gets the value of the pid property.
      * 
      * @return
@@ -169,54 +136,6 @@ public class Person {
      */
     public void setPid(Integer value) {
         this.pid = value;
-    }
-
-    /**
-     * Gets the value of the uname property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUname() {
-        return uname;
-    }
-
-    /**
-     * Sets the value of the uname property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUname(String value) {
-        this.uname = value;
-    }
-
-    /**
-     * Gets the value of the usertype property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUsertype() {
-        return usertype;
-    }
-
-    /**
-     * Sets the value of the usertype property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUsertype(String value) {
-        this.usertype = value;
     }
 
 }

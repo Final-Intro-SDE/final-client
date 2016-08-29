@@ -3,7 +3,6 @@ package final1.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -17,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://ws.final1/}goal" minOccurs="0"/>
+ *         &lt;element name="goal" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -32,18 +31,17 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class UpdateGoal {
 
-    @XmlElement(namespace = "http://ws.final1/")
-    protected Goal goal;
+    protected String goal;
 
     /**
      * Gets the value of the goal property.
      * 
      * @return
      *     possible object is
-     *     {@link Goal }
+     *     {@link String }
      *     
      */
-    public Goal getGoal() {
+    public String getGoal() {
         return goal;
     }
 
@@ -52,10 +50,10 @@ public class UpdateGoal {
      * 
      * @param value
      *     allowed object is
-     *     {@link Goal }
+     *     {@link String }
      *     
      */
-    public void setGoal(Goal value) {
+    public void setGoal(String value) {
         this.goal = value;
     }
 

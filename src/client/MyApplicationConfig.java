@@ -4,9 +4,9 @@ import javax.ws.rs.ApplicationPath;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
-@ApplicationPath("client")
+@ApplicationPath("sdelab")
 public class MyApplicationConfig extends ResourceConfig {
     public MyApplicationConfig () {
-        packages("final1");
+        packages("client");
     }
 }

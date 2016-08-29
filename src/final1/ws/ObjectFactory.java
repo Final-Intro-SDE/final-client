@@ -24,44 +24,62 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _DeleteGoalResponse_QNAME = new QName("http://ws.final1/", "deleteGoalResponse");
-    private final static QName _ReadMeasureTypesResponse_QNAME = new QName("http://ws.final1/", "readMeasureTypesResponse");
-    private final static QName _UpdatePersonHealthProfileResponse_QNAME = new QName("http://ws.final1/", "updatePersonHealthProfileResponse");
-    private final static QName _DeleteTypeResponse_QNAME = new QName("http://ws.final1/", "deleteTypeResponse");
-    private final static QName _CreateType_QNAME = new QName("http://ws.final1/", "createType");
+    private final static QName _SaveType_QNAME = new QName("http://ws.final1/", "saveType");
+    private final static QName _UpdateHealthResponse_QNAME = new QName("http://ws.final1/", "updateHealthResponse");
+    private final static QName _GetHealthById_QNAME = new QName("http://ws.final1/", "getHealthById");
     private final static QName _Type_QNAME = new QName("http://ws.final1/", "type");
-    private final static QName _DeletePersonResponse_QNAME = new QName("http://ws.final1/", "deletePersonResponse");
-    private final static QName _DeletePerson_QNAME = new QName("http://ws.final1/", "deletePerson");
-    private final static QName _CreatePersonResponse_QNAME = new QName("http://ws.final1/", "createPersonResponse");
-    private final static QName _Goal_QNAME = new QName("http://ws.final1/", "goal");
-    private final static QName _UpdateGoalResponse_QNAME = new QName("http://ws.final1/", "updateGoalResponse");
-    private final static QName _GetGoalList_QNAME = new QName("http://ws.final1/", "getGoalList");
-    private final static QName _SavePersonMeasure_QNAME = new QName("http://ws.final1/", "savePersonMeasure");
-    private final static QName _SavePersonMeasureResponse_QNAME = new QName("http://ws.final1/", "savePersonMeasureResponse");
-    private final static QName _UpdateTypeResponse_QNAME = new QName("http://ws.final1/", "updateTypeResponse");
-    private final static QName _DeleteType_QNAME = new QName("http://ws.final1/", "deleteType");
-    private final static QName _CreatePerson_QNAME = new QName("http://ws.final1/", "createPerson");
-    private final static QName _UpdateGoal_QNAME = new QName("http://ws.final1/", "updateGoal");
-    private final static QName _ReadMeasureTypes_QNAME = new QName("http://ws.final1/", "readMeasureTypes");
-    private final static QName _ReadPersonHistoryResponse_QNAME = new QName("http://ws.final1/", "readPersonHistoryResponse");
-    private final static QName _UpdatePersonResponse_QNAME = new QName("http://ws.final1/", "updatePersonResponse");
-    private final static QName _CreateGoalResponse_QNAME = new QName("http://ws.final1/", "createGoalResponse");
-    private final static QName _CreateTypeResponse_QNAME = new QName("http://ws.final1/", "createTypeResponse");
-    private final static QName _Healthprofile_QNAME = new QName("http://ws.final1/", "healthprofile");
-    private final static QName _ReadPersonHistory_QNAME = new QName("http://ws.final1/", "readPersonHistory");
-    private final static QName _ReadPersonResponse_QNAME = new QName("http://ws.final1/", "readPersonResponse");
-    private final static QName _GetPeopleListResponse_QNAME = new QName("http://ws.final1/", "getPeopleListResponse");
+    private final static QName _RemoveTypeResponse_QNAME = new QName("http://ws.final1/", "removeTypeResponse");
+    private final static QName _GetAllGoal_QNAME = new QName("http://ws.final1/", "getAllGoal");
     private final static QName _Person_QNAME = new QName("http://ws.final1/", "person");
-    private final static QName _ReadPerson_QNAME = new QName("http://ws.final1/", "readPerson");
-    private final static QName _CreateGoal_QNAME = new QName("http://ws.final1/", "createGoal");
-    private final static QName _DeleteGoal_QNAME = new QName("http://ws.final1/", "deleteGoal");
-    private final static QName _UpdatePersonHealthProfile_QNAME = new QName("http://ws.final1/", "updatePersonHealthProfile");
-    private final static QName _ReadPersonMeasure_QNAME = new QName("http://ws.final1/", "readPersonMeasure");
-    private final static QName _ReadPersonMeasureResponse_QNAME = new QName("http://ws.final1/", "readPersonMeasureResponse");
+    private final static QName _GetHProfByPrsnMeasureResponse_QNAME = new QName("http://ws.final1/", "getHProfByPrsnMeasureResponse");
+    private final static QName _GetHealthProfByPidTidResponse_QNAME = new QName("http://ws.final1/", "getHealthProfByPidTidResponse");
+    private final static QName _GetGolByPidTidResponse_QNAME = new QName("http://ws.final1/", "getGolByPidTidResponse");
+    private final static QName _GetPersonById_QNAME = new QName("http://ws.final1/", "getPersonById");
+    private final static QName _GetAllHealthResponse_QNAME = new QName("http://ws.final1/", "getAllHealthResponse");
+    private final static QName _SaveTypeResponse_QNAME = new QName("http://ws.final1/", "saveTypeResponse");
+    private final static QName _SaveHealthprofileResponse_QNAME = new QName("http://ws.final1/", "saveHealthprofileResponse");
+    private final static QName _UpdateGoalResponse_QNAME = new QName("http://ws.final1/", "updateGoalResponse");
+    private final static QName _GetHProfByPrsnMeasure_QNAME = new QName("http://ws.final1/", "getHProfByPrsnMeasure");
     private final static QName _UpdatePerson_QNAME = new QName("http://ws.final1/", "updatePerson");
-    private final static QName _GetPeopleList_QNAME = new QName("http://ws.final1/", "getPeopleList");
-    private final static QName _GetGoalListResponse_QNAME = new QName("http://ws.final1/", "getGoalListResponse");
+    private final static QName _Goal_QNAME = new QName("http://ws.final1/", "goal");
+    private final static QName _GetAllTypeResponse_QNAME = new QName("http://ws.final1/", "getAllTypeResponse");
+    private final static QName _RemoveHealthResponse_QNAME = new QName("http://ws.final1/", "removeHealthResponse");
+    private final static QName _GetGoalByIdResponse_QNAME = new QName("http://ws.final1/", "getGoalByIdResponse");
+    private final static QName _SaveGoal_QNAME = new QName("http://ws.final1/", "saveGoal");
+    private final static QName _SavePerson_QNAME = new QName("http://ws.final1/", "savePerson");
+    private final static QName _GetAllPeople_QNAME = new QName("http://ws.final1/", "getAllPeople");
+    private final static QName _GetTypeByIdResponse_QNAME = new QName("http://ws.final1/", "getTypeByIdResponse");
+    private final static QName _GetHealthprofByPidResponse_QNAME = new QName("http://ws.final1/", "getHealthprofByPidResponse");
+    private final static QName _RemovePersonResponse_QNAME = new QName("http://ws.final1/", "removePersonResponse");
+    private final static QName _GetGolByPidTid_QNAME = new QName("http://ws.final1/", "getGolByPidTid");
+    private final static QName _GetAllHealth_QNAME = new QName("http://ws.final1/", "getAllHealth");
+    private final static QName _GetGoalByPid_QNAME = new QName("http://ws.final1/", "getGoalByPid");
+    private final static QName _RemoveHealth_QNAME = new QName("http://ws.final1/", "removeHealth");
+    private final static QName _GetPersonByIdResponse_QNAME = new QName("http://ws.final1/", "getPersonByIdResponse");
+    private final static QName _GetTypeByStringResponse_QNAME = new QName("http://ws.final1/", "getTypeByStringResponse");
+    private final static QName _DeleteGoal_QNAME = new QName("http://ws.final1/", "deleteGoal");
+    private final static QName _GetTypeById_QNAME = new QName("http://ws.final1/", "getTypeById");
     private final static QName _UpdateType_QNAME = new QName("http://ws.final1/", "updateType");
+    private final static QName _RemoveType_QNAME = new QName("http://ws.final1/", "removeType");
+    private final static QName _SavePersonResponse_QNAME = new QName("http://ws.final1/", "savePersonResponse");
+    private final static QName _DeleteGoalResponse_QNAME = new QName("http://ws.final1/", "deleteGoalResponse");
+    private final static QName _GetAllType_QNAME = new QName("http://ws.final1/", "getAllType");
+    private final static QName _GetHealthByIdResponse_QNAME = new QName("http://ws.final1/", "getHealthByIdResponse");
+    private final static QName _SaveGoalResponse_QNAME = new QName("http://ws.final1/", "saveGoalResponse");
+    private final static QName _UpdateTypeResponse_QNAME = new QName("http://ws.final1/", "updateTypeResponse");
+    private final static QName _UpdatePersonResponse_QNAME = new QName("http://ws.final1/", "updatePersonResponse");
+    private final static QName _UpdateGoal_QNAME = new QName("http://ws.final1/", "updateGoal");
+    private final static QName _Healthprofile_QNAME = new QName("http://ws.final1/", "healthprofile");
+    private final static QName _RemovePerson_QNAME = new QName("http://ws.final1/", "removePerson");
+    private final static QName _UpdateHealth_QNAME = new QName("http://ws.final1/", "updateHealth");
+    private final static QName _GetGoalByPidResponse_QNAME = new QName("http://ws.final1/", "getGoalByPidResponse");
+    private final static QName _GetAllGoalResponse_QNAME = new QName("http://ws.final1/", "getAllGoalResponse");
+    private final static QName _SaveHealthprofile_QNAME = new QName("http://ws.final1/", "saveHealthprofile");
+    private final static QName _GetGoalById_QNAME = new QName("http://ws.final1/", "getGoalById");
+    private final static QName _GetAllPeopleResponse_QNAME = new QName("http://ws.final1/", "getAllPeopleResponse");
+    private final static QName _GetHealthprofByPid_QNAME = new QName("http://ws.final1/", "getHealthprofByPid");
+    private final static QName _GetTypeByString_QNAME = new QName("http://ws.final1/", "getTypeByString");
+    private final static QName _GetHealthProfByPidTid_QNAME = new QName("http://ws.final1/", "getHealthProfByPidTid");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: final1.ws
@@ -71,219 +89,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeleteGoalResponse }
+     * Create an instance of {@link GetHProfByPrsnMeasureResponse }
      * 
      */
-    public DeleteGoalResponse createDeleteGoalResponse() {
-        return new DeleteGoalResponse();
-    }
-
-    /**
-     * Create an instance of {@link ReadMeasureTypesResponse }
-     * 
-     */
-    public ReadMeasureTypesResponse createReadMeasureTypesResponse() {
-        return new ReadMeasureTypesResponse();
-    }
-
-    /**
-     * Create an instance of {@link UpdatePersonHealthProfileResponse }
-     * 
-     */
-    public UpdatePersonHealthProfileResponse createUpdatePersonHealthProfileResponse() {
-        return new UpdatePersonHealthProfileResponse();
-    }
-
-    /**
-     * Create an instance of {@link DeleteTypeResponse }
-     * 
-     */
-    public DeleteTypeResponse createDeleteTypeResponse() {
-        return new DeleteTypeResponse();
-    }
-
-    /**
-     * Create an instance of {@link CreateType }
-     * 
-     */
-    public CreateType createCreateType() {
-        return new CreateType();
-    }
-
-    /**
-     * Create an instance of {@link Type }
-     * 
-     */
-    public Type createType() {
-        return new Type();
-    }
-
-    /**
-     * Create an instance of {@link DeletePersonResponse }
-     * 
-     */
-    public DeletePersonResponse createDeletePersonResponse() {
-        return new DeletePersonResponse();
-    }
-
-    /**
-     * Create an instance of {@link DeletePerson }
-     * 
-     */
-    public DeletePerson createDeletePerson() {
-        return new DeletePerson();
-    }
-
-    /**
-     * Create an instance of {@link CreatePersonResponse }
-     * 
-     */
-    public CreatePersonResponse createCreatePersonResponse() {
-        return new CreatePersonResponse();
-    }
-
-    /**
-     * Create an instance of {@link Goal }
-     * 
-     */
-    public Goal createGoal() {
-        return new Goal();
-    }
-
-    /**
-     * Create an instance of {@link UpdateGoalResponse }
-     * 
-     */
-    public UpdateGoalResponse createUpdateGoalResponse() {
-        return new UpdateGoalResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetGoalList }
-     * 
-     */
-    public GetGoalList createGetGoalList() {
-        return new GetGoalList();
-    }
-
-    /**
-     * Create an instance of {@link SavePersonMeasure }
-     * 
-     */
-    public SavePersonMeasure createSavePersonMeasure() {
-        return new SavePersonMeasure();
-    }
-
-    /**
-     * Create an instance of {@link SavePersonMeasureResponse }
-     * 
-     */
-    public SavePersonMeasureResponse createSavePersonMeasureResponse() {
-        return new SavePersonMeasureResponse();
-    }
-
-    /**
-     * Create an instance of {@link UpdateTypeResponse }
-     * 
-     */
-    public UpdateTypeResponse createUpdateTypeResponse() {
-        return new UpdateTypeResponse();
-    }
-
-    /**
-     * Create an instance of {@link DeleteType }
-     * 
-     */
-    public DeleteType createDeleteType() {
-        return new DeleteType();
-    }
-
-    /**
-     * Create an instance of {@link CreatePerson }
-     * 
-     */
-    public CreatePerson createCreatePerson() {
-        return new CreatePerson();
-    }
-
-    /**
-     * Create an instance of {@link UpdateGoal }
-     * 
-     */
-    public UpdateGoal createUpdateGoal() {
-        return new UpdateGoal();
-    }
-
-    /**
-     * Create an instance of {@link ReadMeasureTypes }
-     * 
-     */
-    public ReadMeasureTypes createReadMeasureTypes() {
-        return new ReadMeasureTypes();
-    }
-
-    /**
-     * Create an instance of {@link ReadPersonHistoryResponse }
-     * 
-     */
-    public ReadPersonHistoryResponse createReadPersonHistoryResponse() {
-        return new ReadPersonHistoryResponse();
-    }
-
-    /**
-     * Create an instance of {@link UpdatePersonResponse }
-     * 
-     */
-    public UpdatePersonResponse createUpdatePersonResponse() {
-        return new UpdatePersonResponse();
-    }
-
-    /**
-     * Create an instance of {@link CreateGoalResponse }
-     * 
-     */
-    public CreateGoalResponse createCreateGoalResponse() {
-        return new CreateGoalResponse();
-    }
-
-    /**
-     * Create an instance of {@link CreateTypeResponse }
-     * 
-     */
-    public CreateTypeResponse createCreateTypeResponse() {
-        return new CreateTypeResponse();
-    }
-
-    /**
-     * Create an instance of {@link Healthprofile }
-     * 
-     */
-    public Healthprofile createHealthprofile() {
-        return new Healthprofile();
-    }
-
-    /**
-     * Create an instance of {@link ReadPersonHistory }
-     * 
-     */
-    public ReadPersonHistory createReadPersonHistory() {
-        return new ReadPersonHistory();
-    }
-
-    /**
-     * Create an instance of {@link ReadPersonResponse }
-     * 
-     */
-    public ReadPersonResponse createReadPersonResponse() {
-        return new ReadPersonResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetPeopleListResponse }
-     * 
-     */
-    public GetPeopleListResponse createGetPeopleListResponse() {
-        return new GetPeopleListResponse();
+    public GetHProfByPrsnMeasureResponse createGetHProfByPrsnMeasureResponse() {
+        return new GetHProfByPrsnMeasureResponse();
     }
 
     /**
@@ -295,51 +105,195 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReadPerson }
+     * Create an instance of {@link GetAllGoal }
      * 
      */
-    public ReadPerson createReadPerson() {
-        return new ReadPerson();
+    public GetAllGoal createGetAllGoal() {
+        return new GetAllGoal();
     }
 
     /**
-     * Create an instance of {@link CreateGoal }
+     * Create an instance of {@link RemoveTypeResponse }
      * 
      */
-    public CreateGoal createCreateGoal() {
-        return new CreateGoal();
+    public RemoveTypeResponse createRemoveTypeResponse() {
+        return new RemoveTypeResponse();
     }
 
     /**
-     * Create an instance of {@link DeleteGoal }
+     * Create an instance of {@link UpdateHealthResponse }
      * 
      */
-    public DeleteGoal createDeleteGoal() {
-        return new DeleteGoal();
+    public UpdateHealthResponse createUpdateHealthResponse() {
+        return new UpdateHealthResponse();
     }
 
     /**
-     * Create an instance of {@link UpdatePersonHealthProfile }
+     * Create an instance of {@link GetHealthById }
      * 
      */
-    public UpdatePersonHealthProfile createUpdatePersonHealthProfile() {
-        return new UpdatePersonHealthProfile();
+    public GetHealthById createGetHealthById() {
+        return new GetHealthById();
     }
 
     /**
-     * Create an instance of {@link ReadPersonMeasure }
+     * Create an instance of {@link Type }
      * 
      */
-    public ReadPersonMeasure createReadPersonMeasure() {
-        return new ReadPersonMeasure();
+    public Type createType() {
+        return new Type();
     }
 
     /**
-     * Create an instance of {@link ReadPersonMeasureResponse }
+     * Create an instance of {@link SaveType }
      * 
      */
-    public ReadPersonMeasureResponse createReadPersonMeasureResponse() {
-        return new ReadPersonMeasureResponse();
+    public SaveType createSaveType() {
+        return new SaveType();
+    }
+
+    /**
+     * Create an instance of {@link GetHProfByPrsnMeasure }
+     * 
+     */
+    public GetHProfByPrsnMeasure createGetHProfByPrsnMeasure() {
+        return new GetHProfByPrsnMeasure();
+    }
+
+    /**
+     * Create an instance of {@link UpdateGoalResponse }
+     * 
+     */
+    public UpdateGoalResponse createUpdateGoalResponse() {
+        return new UpdateGoalResponse();
+    }
+
+    /**
+     * Create an instance of {@link SaveHealthprofileResponse }
+     * 
+     */
+    public SaveHealthprofileResponse createSaveHealthprofileResponse() {
+        return new SaveHealthprofileResponse();
+    }
+
+    /**
+     * Create an instance of {@link SaveTypeResponse }
+     * 
+     */
+    public SaveTypeResponse createSaveTypeResponse() {
+        return new SaveTypeResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetAllHealthResponse }
+     * 
+     */
+    public GetAllHealthResponse createGetAllHealthResponse() {
+        return new GetAllHealthResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetPersonById }
+     * 
+     */
+    public GetPersonById createGetPersonById() {
+        return new GetPersonById();
+    }
+
+    /**
+     * Create an instance of {@link GetGolByPidTidResponse }
+     * 
+     */
+    public GetGolByPidTidResponse createGetGolByPidTidResponse() {
+        return new GetGolByPidTidResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetHealthProfByPidTidResponse }
+     * 
+     */
+    public GetHealthProfByPidTidResponse createGetHealthProfByPidTidResponse() {
+        return new GetHealthProfByPidTidResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetGolByPidTid }
+     * 
+     */
+    public GetGolByPidTid createGetGolByPidTid() {
+        return new GetGolByPidTid();
+    }
+
+    /**
+     * Create an instance of {@link RemovePersonResponse }
+     * 
+     */
+    public RemovePersonResponse createRemovePersonResponse() {
+        return new RemovePersonResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetHealthprofByPidResponse }
+     * 
+     */
+    public GetHealthprofByPidResponse createGetHealthprofByPidResponse() {
+        return new GetHealthprofByPidResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetTypeByIdResponse }
+     * 
+     */
+    public GetTypeByIdResponse createGetTypeByIdResponse() {
+        return new GetTypeByIdResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetAllPeople }
+     * 
+     */
+    public GetAllPeople createGetAllPeople() {
+        return new GetAllPeople();
+    }
+
+    /**
+     * Create an instance of {@link SavePerson }
+     * 
+     */
+    public SavePerson createSavePerson() {
+        return new SavePerson();
+    }
+
+    /**
+     * Create an instance of {@link GetGoalByIdResponse }
+     * 
+     */
+    public GetGoalByIdResponse createGetGoalByIdResponse() {
+        return new GetGoalByIdResponse();
+    }
+
+    /**
+     * Create an instance of {@link RemoveHealthResponse }
+     * 
+     */
+    public RemoveHealthResponse createRemoveHealthResponse() {
+        return new RemoveHealthResponse();
+    }
+
+    /**
+     * Create an instance of {@link SaveGoal }
+     * 
+     */
+    public SaveGoal createSaveGoal() {
+        return new SaveGoal();
+    }
+
+    /**
+     * Create an instance of {@link GetAllTypeResponse }
+     * 
+     */
+    public GetAllTypeResponse createGetAllTypeResponse() {
+        return new GetAllTypeResponse();
     }
 
     /**
@@ -351,19 +305,115 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetPeopleList }
+     * Create an instance of {@link Goal }
      * 
      */
-    public GetPeopleList createGetPeopleList() {
-        return new GetPeopleList();
+    public Goal createGoal() {
+        return new Goal();
     }
 
     /**
-     * Create an instance of {@link GetGoalListResponse }
+     * Create an instance of {@link DeleteGoal }
      * 
      */
-    public GetGoalListResponse createGetGoalListResponse() {
-        return new GetGoalListResponse();
+    public DeleteGoal createDeleteGoal() {
+        return new DeleteGoal();
+    }
+
+    /**
+     * Create an instance of {@link GetTypeById }
+     * 
+     */
+    public GetTypeById createGetTypeById() {
+        return new GetTypeById();
+    }
+
+    /**
+     * Create an instance of {@link GetTypeByStringResponse }
+     * 
+     */
+    public GetTypeByStringResponse createGetTypeByStringResponse() {
+        return new GetTypeByStringResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetPersonByIdResponse }
+     * 
+     */
+    public GetPersonByIdResponse createGetPersonByIdResponse() {
+        return new GetPersonByIdResponse();
+    }
+
+    /**
+     * Create an instance of {@link RemoveHealth }
+     * 
+     */
+    public RemoveHealth createRemoveHealth() {
+        return new RemoveHealth();
+    }
+
+    /**
+     * Create an instance of {@link GetGoalByPid }
+     * 
+     */
+    public GetGoalByPid createGetGoalByPid() {
+        return new GetGoalByPid();
+    }
+
+    /**
+     * Create an instance of {@link GetAllHealth }
+     * 
+     */
+    public GetAllHealth createGetAllHealth() {
+        return new GetAllHealth();
+    }
+
+    /**
+     * Create an instance of {@link GetHealthByIdResponse }
+     * 
+     */
+    public GetHealthByIdResponse createGetHealthByIdResponse() {
+        return new GetHealthByIdResponse();
+    }
+
+    /**
+     * Create an instance of {@link SaveGoalResponse }
+     * 
+     */
+    public SaveGoalResponse createSaveGoalResponse() {
+        return new SaveGoalResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetAllType }
+     * 
+     */
+    public GetAllType createGetAllType() {
+        return new GetAllType();
+    }
+
+    /**
+     * Create an instance of {@link DeleteGoalResponse }
+     * 
+     */
+    public DeleteGoalResponse createDeleteGoalResponse() {
+        return new DeleteGoalResponse();
+    }
+
+    /**
+     * Create an instance of {@link RemoveType }
+     * 
+     */
+    public RemoveType createRemoveType() {
+        return new RemoveType();
+    }
+
+    /**
+     * Create an instance of {@link SavePersonResponse }
+     * 
+     */
+    public SavePersonResponse createSavePersonResponse() {
+        return new SavePersonResponse();
     }
 
     /**
@@ -375,48 +425,142 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteGoalResponse }{@code >}}
+     * Create an instance of {@link RemovePerson }
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "deleteGoalResponse")
-    public JAXBElement<DeleteGoalResponse> createDeleteGoalResponse(DeleteGoalResponse value) {
-        return new JAXBElement<DeleteGoalResponse>(_DeleteGoalResponse_QNAME, DeleteGoalResponse.class, null, value);
+    public RemovePerson createRemovePerson() {
+        return new RemovePerson();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadMeasureTypesResponse }{@code >}}
+     * Create an instance of {@link UpdatePersonResponse }
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "readMeasureTypesResponse")
-    public JAXBElement<ReadMeasureTypesResponse> createReadMeasureTypesResponse(ReadMeasureTypesResponse value) {
-        return new JAXBElement<ReadMeasureTypesResponse>(_ReadMeasureTypesResponse_QNAME, ReadMeasureTypesResponse.class, null, value);
+    public UpdatePersonResponse createUpdatePersonResponse() {
+        return new UpdatePersonResponse();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePersonHealthProfileResponse }{@code >}}
+     * Create an instance of {@link UpdateGoal }
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "updatePersonHealthProfileResponse")
-    public JAXBElement<UpdatePersonHealthProfileResponse> createUpdatePersonHealthProfileResponse(UpdatePersonHealthProfileResponse value) {
-        return new JAXBElement<UpdatePersonHealthProfileResponse>(_UpdatePersonHealthProfileResponse_QNAME, UpdatePersonHealthProfileResponse.class, null, value);
+    public UpdateGoal createUpdateGoal() {
+        return new UpdateGoal();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteTypeResponse }{@code >}}
+     * Create an instance of {@link Healthprofile }
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "deleteTypeResponse")
-    public JAXBElement<DeleteTypeResponse> createDeleteTypeResponse(DeleteTypeResponse value) {
-        return new JAXBElement<DeleteTypeResponse>(_DeleteTypeResponse_QNAME, DeleteTypeResponse.class, null, value);
+    public Healthprofile createHealthprofile() {
+        return new Healthprofile();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateType }{@code >}}
+     * Create an instance of {@link UpdateTypeResponse }
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "createType")
-    public JAXBElement<CreateType> createCreateType(CreateType value) {
-        return new JAXBElement<CreateType>(_CreateType_QNAME, CreateType.class, null, value);
+    public UpdateTypeResponse createUpdateTypeResponse() {
+        return new UpdateTypeResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetAllGoalResponse }
+     * 
+     */
+    public GetAllGoalResponse createGetAllGoalResponse() {
+        return new GetAllGoalResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetGoalByPidResponse }
+     * 
+     */
+    public GetGoalByPidResponse createGetGoalByPidResponse() {
+        return new GetGoalByPidResponse();
+    }
+
+    /**
+     * Create an instance of {@link UpdateHealth }
+     * 
+     */
+    public UpdateHealth createUpdateHealth() {
+        return new UpdateHealth();
+    }
+
+    /**
+     * Create an instance of {@link GetHealthProfByPidTid }
+     * 
+     */
+    public GetHealthProfByPidTid createGetHealthProfByPidTid() {
+        return new GetHealthProfByPidTid();
+    }
+
+    /**
+     * Create an instance of {@link GetTypeByString }
+     * 
+     */
+    public GetTypeByString createGetTypeByString() {
+        return new GetTypeByString();
+    }
+
+    /**
+     * Create an instance of {@link GetHealthprofByPid }
+     * 
+     */
+    public GetHealthprofByPid createGetHealthprofByPid() {
+        return new GetHealthprofByPid();
+    }
+
+    /**
+     * Create an instance of {@link GetAllPeopleResponse }
+     * 
+     */
+    public GetAllPeopleResponse createGetAllPeopleResponse() {
+        return new GetAllPeopleResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetGoalById }
+     * 
+     */
+    public GetGoalById createGetGoalById() {
+        return new GetGoalById();
+    }
+
+    /**
+     * Create an instance of {@link SaveHealthprofile }
+     * 
+     */
+    public SaveHealthprofile createSaveHealthprofile() {
+        return new SaveHealthprofile();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SaveType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "saveType")
+    public JAXBElement<SaveType> createSaveType(SaveType value) {
+        return new JAXBElement<SaveType>(_SaveType_QNAME, SaveType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateHealthResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "updateHealthResponse")
+    public JAXBElement<UpdateHealthResponse> createUpdateHealthResponse(UpdateHealthResponse value) {
+        return new JAXBElement<UpdateHealthResponse>(_UpdateHealthResponse_QNAME, UpdateHealthResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetHealthById }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getHealthById")
+    public JAXBElement<GetHealthById> createGetHealthById(GetHealthById value) {
+        return new JAXBElement<GetHealthById>(_GetHealthById_QNAME, GetHealthById.class, null, value);
     }
 
     /**
@@ -429,192 +573,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeletePersonResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link RemoveTypeResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "deletePersonResponse")
-    public JAXBElement<DeletePersonResponse> createDeletePersonResponse(DeletePersonResponse value) {
-        return new JAXBElement<DeletePersonResponse>(_DeletePersonResponse_QNAME, DeletePersonResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "removeTypeResponse")
+    public JAXBElement<RemoveTypeResponse> createRemoveTypeResponse(RemoveTypeResponse value) {
+        return new JAXBElement<RemoveTypeResponse>(_RemoveTypeResponse_QNAME, RemoveTypeResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeletePerson }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllGoal }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "deletePerson")
-    public JAXBElement<DeletePerson> createDeletePerson(DeletePerson value) {
-        return new JAXBElement<DeletePerson>(_DeletePerson_QNAME, DeletePerson.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreatePersonResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "createPersonResponse")
-    public JAXBElement<CreatePersonResponse> createCreatePersonResponse(CreatePersonResponse value) {
-        return new JAXBElement<CreatePersonResponse>(_CreatePersonResponse_QNAME, CreatePersonResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Goal }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "goal")
-    public JAXBElement<Goal> createGoal(Goal value) {
-        return new JAXBElement<Goal>(_Goal_QNAME, Goal.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateGoalResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "updateGoalResponse")
-    public JAXBElement<UpdateGoalResponse> createUpdateGoalResponse(UpdateGoalResponse value) {
-        return new JAXBElement<UpdateGoalResponse>(_UpdateGoalResponse_QNAME, UpdateGoalResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetGoalList }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "getGoalList")
-    public JAXBElement<GetGoalList> createGetGoalList(GetGoalList value) {
-        return new JAXBElement<GetGoalList>(_GetGoalList_QNAME, GetGoalList.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SavePersonMeasure }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "savePersonMeasure")
-    public JAXBElement<SavePersonMeasure> createSavePersonMeasure(SavePersonMeasure value) {
-        return new JAXBElement<SavePersonMeasure>(_SavePersonMeasure_QNAME, SavePersonMeasure.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SavePersonMeasureResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "savePersonMeasureResponse")
-    public JAXBElement<SavePersonMeasureResponse> createSavePersonMeasureResponse(SavePersonMeasureResponse value) {
-        return new JAXBElement<SavePersonMeasureResponse>(_SavePersonMeasureResponse_QNAME, SavePersonMeasureResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateTypeResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "updateTypeResponse")
-    public JAXBElement<UpdateTypeResponse> createUpdateTypeResponse(UpdateTypeResponse value) {
-        return new JAXBElement<UpdateTypeResponse>(_UpdateTypeResponse_QNAME, UpdateTypeResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "deleteType")
-    public JAXBElement<DeleteType> createDeleteType(DeleteType value) {
-        return new JAXBElement<DeleteType>(_DeleteType_QNAME, DeleteType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreatePerson }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "createPerson")
-    public JAXBElement<CreatePerson> createCreatePerson(CreatePerson value) {
-        return new JAXBElement<CreatePerson>(_CreatePerson_QNAME, CreatePerson.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateGoal }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "updateGoal")
-    public JAXBElement<UpdateGoal> createUpdateGoal(UpdateGoal value) {
-        return new JAXBElement<UpdateGoal>(_UpdateGoal_QNAME, UpdateGoal.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadMeasureTypes }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "readMeasureTypes")
-    public JAXBElement<ReadMeasureTypes> createReadMeasureTypes(ReadMeasureTypes value) {
-        return new JAXBElement<ReadMeasureTypes>(_ReadMeasureTypes_QNAME, ReadMeasureTypes.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonHistoryResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "readPersonHistoryResponse")
-    public JAXBElement<ReadPersonHistoryResponse> createReadPersonHistoryResponse(ReadPersonHistoryResponse value) {
-        return new JAXBElement<ReadPersonHistoryResponse>(_ReadPersonHistoryResponse_QNAME, ReadPersonHistoryResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePersonResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "updatePersonResponse")
-    public JAXBElement<UpdatePersonResponse> createUpdatePersonResponse(UpdatePersonResponse value) {
-        return new JAXBElement<UpdatePersonResponse>(_UpdatePersonResponse_QNAME, UpdatePersonResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateGoalResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "createGoalResponse")
-    public JAXBElement<CreateGoalResponse> createCreateGoalResponse(CreateGoalResponse value) {
-        return new JAXBElement<CreateGoalResponse>(_CreateGoalResponse_QNAME, CreateGoalResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateTypeResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "createTypeResponse")
-    public JAXBElement<CreateTypeResponse> createCreateTypeResponse(CreateTypeResponse value) {
-        return new JAXBElement<CreateTypeResponse>(_CreateTypeResponse_QNAME, CreateTypeResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Healthprofile }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "healthprofile")
-    public JAXBElement<Healthprofile> createHealthprofile(Healthprofile value) {
-        return new JAXBElement<Healthprofile>(_Healthprofile_QNAME, Healthprofile.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonHistory }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "readPersonHistory")
-    public JAXBElement<ReadPersonHistory> createReadPersonHistory(ReadPersonHistory value) {
-        return new JAXBElement<ReadPersonHistory>(_ReadPersonHistory_QNAME, ReadPersonHistory.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "readPersonResponse")
-    public JAXBElement<ReadPersonResponse> createReadPersonResponse(ReadPersonResponse value) {
-        return new JAXBElement<ReadPersonResponse>(_ReadPersonResponse_QNAME, ReadPersonResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetPeopleListResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "getPeopleListResponse")
-    public JAXBElement<GetPeopleListResponse> createGetPeopleListResponse(GetPeopleListResponse value) {
-        return new JAXBElement<GetPeopleListResponse>(_GetPeopleListResponse_QNAME, GetPeopleListResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getAllGoal")
+    public JAXBElement<GetAllGoal> createGetAllGoal(GetAllGoal value) {
+        return new JAXBElement<GetAllGoal>(_GetAllGoal_QNAME, GetAllGoal.class, null, value);
     }
 
     /**
@@ -627,57 +600,84 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPerson }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetHProfByPrsnMeasureResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "readPerson")
-    public JAXBElement<ReadPerson> createReadPerson(ReadPerson value) {
-        return new JAXBElement<ReadPerson>(_ReadPerson_QNAME, ReadPerson.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getHProfByPrsnMeasureResponse")
+    public JAXBElement<GetHProfByPrsnMeasureResponse> createGetHProfByPrsnMeasureResponse(GetHProfByPrsnMeasureResponse value) {
+        return new JAXBElement<GetHProfByPrsnMeasureResponse>(_GetHProfByPrsnMeasureResponse_QNAME, GetHProfByPrsnMeasureResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateGoal }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetHealthProfByPidTidResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "createGoal")
-    public JAXBElement<CreateGoal> createCreateGoal(CreateGoal value) {
-        return new JAXBElement<CreateGoal>(_CreateGoal_QNAME, CreateGoal.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getHealthProfByPidTidResponse")
+    public JAXBElement<GetHealthProfByPidTidResponse> createGetHealthProfByPidTidResponse(GetHealthProfByPidTidResponse value) {
+        return new JAXBElement<GetHealthProfByPidTidResponse>(_GetHealthProfByPidTidResponse_QNAME, GetHealthProfByPidTidResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteGoal }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetGolByPidTidResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "deleteGoal")
-    public JAXBElement<DeleteGoal> createDeleteGoal(DeleteGoal value) {
-        return new JAXBElement<DeleteGoal>(_DeleteGoal_QNAME, DeleteGoal.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getGolByPidTidResponse")
+    public JAXBElement<GetGolByPidTidResponse> createGetGolByPidTidResponse(GetGolByPidTidResponse value) {
+        return new JAXBElement<GetGolByPidTidResponse>(_GetGolByPidTidResponse_QNAME, GetGolByPidTidResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePersonHealthProfile }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetPersonById }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "updatePersonHealthProfile")
-    public JAXBElement<UpdatePersonHealthProfile> createUpdatePersonHealthProfile(UpdatePersonHealthProfile value) {
-        return new JAXBElement<UpdatePersonHealthProfile>(_UpdatePersonHealthProfile_QNAME, UpdatePersonHealthProfile.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getPersonById")
+    public JAXBElement<GetPersonById> createGetPersonById(GetPersonById value) {
+        return new JAXBElement<GetPersonById>(_GetPersonById_QNAME, GetPersonById.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonMeasure }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllHealthResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "readPersonMeasure")
-    public JAXBElement<ReadPersonMeasure> createReadPersonMeasure(ReadPersonMeasure value) {
-        return new JAXBElement<ReadPersonMeasure>(_ReadPersonMeasure_QNAME, ReadPersonMeasure.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getAllHealthResponse")
+    public JAXBElement<GetAllHealthResponse> createGetAllHealthResponse(GetAllHealthResponse value) {
+        return new JAXBElement<GetAllHealthResponse>(_GetAllHealthResponse_QNAME, GetAllHealthResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonMeasureResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link SaveTypeResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "readPersonMeasureResponse")
-    public JAXBElement<ReadPersonMeasureResponse> createReadPersonMeasureResponse(ReadPersonMeasureResponse value) {
-        return new JAXBElement<ReadPersonMeasureResponse>(_ReadPersonMeasureResponse_QNAME, ReadPersonMeasureResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "saveTypeResponse")
+    public JAXBElement<SaveTypeResponse> createSaveTypeResponse(SaveTypeResponse value) {
+        return new JAXBElement<SaveTypeResponse>(_SaveTypeResponse_QNAME, SaveTypeResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SaveHealthprofileResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "saveHealthprofileResponse")
+    public JAXBElement<SaveHealthprofileResponse> createSaveHealthprofileResponse(SaveHealthprofileResponse value) {
+        return new JAXBElement<SaveHealthprofileResponse>(_SaveHealthprofileResponse_QNAME, SaveHealthprofileResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateGoalResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "updateGoalResponse")
+    public JAXBElement<UpdateGoalResponse> createUpdateGoalResponse(UpdateGoalResponse value) {
+        return new JAXBElement<UpdateGoalResponse>(_UpdateGoalResponse_QNAME, UpdateGoalResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetHProfByPrsnMeasure }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getHProfByPrsnMeasure")
+    public JAXBElement<GetHProfByPrsnMeasure> createGetHProfByPrsnMeasure(GetHProfByPrsnMeasure value) {
+        return new JAXBElement<GetHProfByPrsnMeasure>(_GetHProfByPrsnMeasure_QNAME, GetHProfByPrsnMeasure.class, null, value);
     }
 
     /**
@@ -690,21 +690,165 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetPeopleList }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Goal }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "getPeopleList")
-    public JAXBElement<GetPeopleList> createGetPeopleList(GetPeopleList value) {
-        return new JAXBElement<GetPeopleList>(_GetPeopleList_QNAME, GetPeopleList.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "goal")
+    public JAXBElement<Goal> createGoal(Goal value) {
+        return new JAXBElement<Goal>(_Goal_QNAME, Goal.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetGoalListResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllTypeResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.final1/", name = "getGoalListResponse")
-    public JAXBElement<GetGoalListResponse> createGetGoalListResponse(GetGoalListResponse value) {
-        return new JAXBElement<GetGoalListResponse>(_GetGoalListResponse_QNAME, GetGoalListResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getAllTypeResponse")
+    public JAXBElement<GetAllTypeResponse> createGetAllTypeResponse(GetAllTypeResponse value) {
+        return new JAXBElement<GetAllTypeResponse>(_GetAllTypeResponse_QNAME, GetAllTypeResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RemoveHealthResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "removeHealthResponse")
+    public JAXBElement<RemoveHealthResponse> createRemoveHealthResponse(RemoveHealthResponse value) {
+        return new JAXBElement<RemoveHealthResponse>(_RemoveHealthResponse_QNAME, RemoveHealthResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetGoalByIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getGoalByIdResponse")
+    public JAXBElement<GetGoalByIdResponse> createGetGoalByIdResponse(GetGoalByIdResponse value) {
+        return new JAXBElement<GetGoalByIdResponse>(_GetGoalByIdResponse_QNAME, GetGoalByIdResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SaveGoal }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "saveGoal")
+    public JAXBElement<SaveGoal> createSaveGoal(SaveGoal value) {
+        return new JAXBElement<SaveGoal>(_SaveGoal_QNAME, SaveGoal.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SavePerson }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "savePerson")
+    public JAXBElement<SavePerson> createSavePerson(SavePerson value) {
+        return new JAXBElement<SavePerson>(_SavePerson_QNAME, SavePerson.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllPeople }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getAllPeople")
+    public JAXBElement<GetAllPeople> createGetAllPeople(GetAllPeople value) {
+        return new JAXBElement<GetAllPeople>(_GetAllPeople_QNAME, GetAllPeople.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetTypeByIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getTypeByIdResponse")
+    public JAXBElement<GetTypeByIdResponse> createGetTypeByIdResponse(GetTypeByIdResponse value) {
+        return new JAXBElement<GetTypeByIdResponse>(_GetTypeByIdResponse_QNAME, GetTypeByIdResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetHealthprofByPidResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getHealthprofByPidResponse")
+    public JAXBElement<GetHealthprofByPidResponse> createGetHealthprofByPidResponse(GetHealthprofByPidResponse value) {
+        return new JAXBElement<GetHealthprofByPidResponse>(_GetHealthprofByPidResponse_QNAME, GetHealthprofByPidResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RemovePersonResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "removePersonResponse")
+    public JAXBElement<RemovePersonResponse> createRemovePersonResponse(RemovePersonResponse value) {
+        return new JAXBElement<RemovePersonResponse>(_RemovePersonResponse_QNAME, RemovePersonResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetGolByPidTid }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getGolByPidTid")
+    public JAXBElement<GetGolByPidTid> createGetGolByPidTid(GetGolByPidTid value) {
+        return new JAXBElement<GetGolByPidTid>(_GetGolByPidTid_QNAME, GetGolByPidTid.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllHealth }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getAllHealth")
+    public JAXBElement<GetAllHealth> createGetAllHealth(GetAllHealth value) {
+        return new JAXBElement<GetAllHealth>(_GetAllHealth_QNAME, GetAllHealth.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetGoalByPid }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getGoalByPid")
+    public JAXBElement<GetGoalByPid> createGetGoalByPid(GetGoalByPid value) {
+        return new JAXBElement<GetGoalByPid>(_GetGoalByPid_QNAME, GetGoalByPid.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RemoveHealth }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "removeHealth")
+    public JAXBElement<RemoveHealth> createRemoveHealth(RemoveHealth value) {
+        return new JAXBElement<RemoveHealth>(_RemoveHealth_QNAME, RemoveHealth.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetPersonByIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getPersonByIdResponse")
+    public JAXBElement<GetPersonByIdResponse> createGetPersonByIdResponse(GetPersonByIdResponse value) {
+        return new JAXBElement<GetPersonByIdResponse>(_GetPersonByIdResponse_QNAME, GetPersonByIdResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetTypeByStringResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getTypeByStringResponse")
+    public JAXBElement<GetTypeByStringResponse> createGetTypeByStringResponse(GetTypeByStringResponse value) {
+        return new JAXBElement<GetTypeByStringResponse>(_GetTypeByStringResponse_QNAME, GetTypeByStringResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteGoal }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "deleteGoal")
+    public JAXBElement<DeleteGoal> createDeleteGoal(DeleteGoal value) {
+        return new JAXBElement<DeleteGoal>(_DeleteGoal_QNAME, DeleteGoal.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetTypeById }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getTypeById")
+    public JAXBElement<GetTypeById> createGetTypeById(GetTypeById value) {
+        return new JAXBElement<GetTypeById>(_GetTypeById_QNAME, GetTypeById.class, null, value);
     }
 
     /**
@@ -714,6 +858,186 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://ws.final1/", name = "updateType")
     public JAXBElement<UpdateType> createUpdateType(UpdateType value) {
         return new JAXBElement<UpdateType>(_UpdateType_QNAME, UpdateType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RemoveType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "removeType")
+    public JAXBElement<RemoveType> createRemoveType(RemoveType value) {
+        return new JAXBElement<RemoveType>(_RemoveType_QNAME, RemoveType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SavePersonResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "savePersonResponse")
+    public JAXBElement<SavePersonResponse> createSavePersonResponse(SavePersonResponse value) {
+        return new JAXBElement<SavePersonResponse>(_SavePersonResponse_QNAME, SavePersonResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteGoalResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "deleteGoalResponse")
+    public JAXBElement<DeleteGoalResponse> createDeleteGoalResponse(DeleteGoalResponse value) {
+        return new JAXBElement<DeleteGoalResponse>(_DeleteGoalResponse_QNAME, DeleteGoalResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getAllType")
+    public JAXBElement<GetAllType> createGetAllType(GetAllType value) {
+        return new JAXBElement<GetAllType>(_GetAllType_QNAME, GetAllType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetHealthByIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getHealthByIdResponse")
+    public JAXBElement<GetHealthByIdResponse> createGetHealthByIdResponse(GetHealthByIdResponse value) {
+        return new JAXBElement<GetHealthByIdResponse>(_GetHealthByIdResponse_QNAME, GetHealthByIdResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SaveGoalResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "saveGoalResponse")
+    public JAXBElement<SaveGoalResponse> createSaveGoalResponse(SaveGoalResponse value) {
+        return new JAXBElement<SaveGoalResponse>(_SaveGoalResponse_QNAME, SaveGoalResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateTypeResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "updateTypeResponse")
+    public JAXBElement<UpdateTypeResponse> createUpdateTypeResponse(UpdateTypeResponse value) {
+        return new JAXBElement<UpdateTypeResponse>(_UpdateTypeResponse_QNAME, UpdateTypeResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePersonResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "updatePersonResponse")
+    public JAXBElement<UpdatePersonResponse> createUpdatePersonResponse(UpdatePersonResponse value) {
+        return new JAXBElement<UpdatePersonResponse>(_UpdatePersonResponse_QNAME, UpdatePersonResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateGoal }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "updateGoal")
+    public JAXBElement<UpdateGoal> createUpdateGoal(UpdateGoal value) {
+        return new JAXBElement<UpdateGoal>(_UpdateGoal_QNAME, UpdateGoal.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Healthprofile }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "healthprofile")
+    public JAXBElement<Healthprofile> createHealthprofile(Healthprofile value) {
+        return new JAXBElement<Healthprofile>(_Healthprofile_QNAME, Healthprofile.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RemovePerson }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "removePerson")
+    public JAXBElement<RemovePerson> createRemovePerson(RemovePerson value) {
+        return new JAXBElement<RemovePerson>(_RemovePerson_QNAME, RemovePerson.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateHealth }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "updateHealth")
+    public JAXBElement<UpdateHealth> createUpdateHealth(UpdateHealth value) {
+        return new JAXBElement<UpdateHealth>(_UpdateHealth_QNAME, UpdateHealth.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetGoalByPidResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getGoalByPidResponse")
+    public JAXBElement<GetGoalByPidResponse> createGetGoalByPidResponse(GetGoalByPidResponse value) {
+        return new JAXBElement<GetGoalByPidResponse>(_GetGoalByPidResponse_QNAME, GetGoalByPidResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllGoalResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getAllGoalResponse")
+    public JAXBElement<GetAllGoalResponse> createGetAllGoalResponse(GetAllGoalResponse value) {
+        return new JAXBElement<GetAllGoalResponse>(_GetAllGoalResponse_QNAME, GetAllGoalResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SaveHealthprofile }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "saveHealthprofile")
+    public JAXBElement<SaveHealthprofile> createSaveHealthprofile(SaveHealthprofile value) {
+        return new JAXBElement<SaveHealthprofile>(_SaveHealthprofile_QNAME, SaveHealthprofile.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetGoalById }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getGoalById")
+    public JAXBElement<GetGoalById> createGetGoalById(GetGoalById value) {
+        return new JAXBElement<GetGoalById>(_GetGoalById_QNAME, GetGoalById.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllPeopleResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getAllPeopleResponse")
+    public JAXBElement<GetAllPeopleResponse> createGetAllPeopleResponse(GetAllPeopleResponse value) {
+        return new JAXBElement<GetAllPeopleResponse>(_GetAllPeopleResponse_QNAME, GetAllPeopleResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetHealthprofByPid }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getHealthprofByPid")
+    public JAXBElement<GetHealthprofByPid> createGetHealthprofByPid(GetHealthprofByPid value) {
+        return new JAXBElement<GetHealthprofByPid>(_GetHealthprofByPid_QNAME, GetHealthprofByPid.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetTypeByString }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getTypeByString")
+    public JAXBElement<GetTypeByString> createGetTypeByString(GetTypeByString value) {
+        return new JAXBElement<GetTypeByString>(_GetTypeByString_QNAME, GetTypeByString.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetHealthProfByPidTid }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.final1/", name = "getHealthProfByPidTid")
+    public JAXBElement<GetHealthProfByPidTid> createGetHealthProfByPidTid(GetHealthProfByPidTid value) {
+        return new JAXBElement<GetHealthProfByPidTid>(_GetHealthProfByPidTid_QNAME, GetHealthProfByPidTid.class, null, value);
     }
 
 }

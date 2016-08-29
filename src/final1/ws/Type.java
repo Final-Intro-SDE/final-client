@@ -3,7 +3,6 @@ package final1.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -17,8 +16,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://ws.final1/}goal" minOccurs="0"/>
- *         &lt;element ref="{http://ws.final1/}healthprofile" minOccurs="0"/>
  *         &lt;element name="measure" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="tid" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -32,69 +29,15 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "type", propOrder = {
-    "goal",
-    "healthprofile",
     "measure",
     "tid",
     "type"
 })
 public class Type {
 
-    @XmlElement(namespace = "http://ws.final1/")
-    protected Goal goal;
-    @XmlElement(namespace = "http://ws.final1/")
-    protected Healthprofile healthprofile;
     protected String measure;
     protected Integer tid;
     protected String type;
-
-    /**
-     * Gets the value of the goal property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Goal }
-     *     
-     */
-    public Goal getGoal() {
-        return goal;
-    }
-
-    /**
-     * Sets the value of the goal property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Goal }
-     *     
-     */
-    public void setGoal(Goal value) {
-        this.goal = value;
-    }
-
-    /**
-     * Gets the value of the healthprofile property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Healthprofile }
-     *     
-     */
-    public Healthprofile getHealthprofile() {
-        return healthprofile;
-    }
-
-    /**
-     * Sets the value of the healthprofile property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Healthprofile }
-     *     
-     */
-    public void setHealthprofile(Healthprofile value) {
-        this.healthprofile = value;
-    }
 
     /**
      * Gets the value of the measure property.
